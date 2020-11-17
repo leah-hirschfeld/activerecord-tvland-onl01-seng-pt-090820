@@ -6,6 +6,6 @@ class Show < ActiveRecord::Base
 
   def actors_list
     actor_array = []
-    "#{self.actor[0].first_name} #{self.actor[0].last_name}"
+    actor_array << "#{self.actor[0].first_name} #{self.actor[0].last_name}"
   end
 end
