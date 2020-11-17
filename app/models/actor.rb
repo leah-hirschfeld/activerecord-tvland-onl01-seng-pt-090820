@@ -10,6 +10,6 @@ class Actor < ActiveRecord::Base
   def list_roles
     #character's full name - show full name
     binding.pry
-    "#{self.actors.character} - #{self.actors.characters.show}"
+    "#{self.characters} - #{self.actors.characters.show}"
   end
 end
