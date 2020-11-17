@@ -1,5 +1,5 @@
-class AddCatchphraseToCharacters < ActiveRecord::Migration[5.1]
+class AddShowsToNetwork < ActiveRecord::Migration[5.1]
   def change
-    add_column :characters, :catchphrase :text
+    add_column :shows, :network_id, :integer
   end
 end
