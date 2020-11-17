@@ -8,6 +8,6 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     #character's full name - show full name
-
+    "#{self.actors.character} - #{self.actors.character}"
   end
 end
