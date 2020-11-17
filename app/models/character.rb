@@ -4,6 +4,6 @@ class Character < ActiveRecord::Base
   belongs_to :show
 
   def say_that_thing_you_say
-    "#{self.name}: #{self.actor.catchphrase}"
+    "#{self.name}: #{self.catchphrase}"
   end
 end
