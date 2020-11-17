@@ -5,6 +5,6 @@ class Show < ActiveRecord::Base
   has_many :actor, through: :characters
 
   def actors_list
-    actor_fullname = "#{self.actor.first_name} #{self.actor.last_name}"
+    actor_fullname = "#{self.actor[0].first_name} #{self.actor.last_name}"
   end
 end
